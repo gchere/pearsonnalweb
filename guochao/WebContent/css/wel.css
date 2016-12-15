@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+body{
+	background-image: url('../image/wel2.jpg');
+	background-size:100%;
+}
+.h{
+	margin-top:40px;
+	margin-bottom:0px;
+	text-align:center;
+	font-size:30px;
+	
+}
+.textarea{
+	width:500px;
+	height:260px;
+	background-color:rgba(255,255,255,0.3);
+	font-family:华文行楷;
+	font-size:20px;
+	border-radius:5px;
+}
+.div1{
+	margin-top:100px;
+	margin-left:700px;
+	wdith:500px;
+	height:300px;
+	margin-lift:100px;
+}
+#logout{
+	position:absolute;
+	right:8%;
+	bottom:22%;
+}
+#nav{
+	margin-top:50px;
+}
+#nav  ul {
+Width:1000px;     
+height:40px;       
+margin:30px auto;
+padding:0;
+list-style:none;   
+border-top:solid 5px #DAA520;    
+border-bottom:solid 5px #DAA520; 
+background:url(img/navig-bg.jpg);  
+}
+#nav ul li {
+float:left;
+text-align:center;
+font:16px/2.5 "microsoft yahei";
+}
