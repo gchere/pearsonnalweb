@@ -1,4 +1,4 @@
-package check.guochao.servlet;
+package check.guochao.filter;
 
 import java.io.IOException;
 import javax.servlet.Filter;
@@ -14,7 +14,7 @@ import javax.servlet.annotation.WebInitParam;
  * Servlet Filter implementation class SimpleFilter
  */
 @WebFilter(
-		urlPatterns = { "/*" }, 
+		urlPatterns = { "" }, 
 		initParams = { 
 				@WebInitParam(name = "ref", value = "helloworld")
 		})
