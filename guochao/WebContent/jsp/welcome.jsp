@@ -1,3 +1,4 @@
+<%@page import="java.util.Set"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -6,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>私人订制——就是这么漂亮</title>
 <link rel="stylesheet" type="text/css" href="../css/wel.css">
-<script type="text/javascript"src="js/wel.js"></script>
+<script type="text/javascript"src="../js/wel.js"></script>
 </head>
 <body>
 	<%
@@ -36,7 +37,8 @@
         <li><span onclick="addFavorite()">收藏本站</span></li>   
 
 </ul>   
-<div style="text-align:center"> 
+
+<!-- <div style="text-align:center"> 
   <button onclick="playPause()">播放/暂停</button> 
   <button onclick="makeBig()">放大</button>
   <button onclick="makeSmall()">缩小</button>
@@ -47,9 +49,13 @@
     <source src="../video/3482.ogg" type="video/ogg">
     您的浏览器不支持 HTML5 video 标签。
   </video>
-</div> 
+</div>  -->
 
 </div>
+<%
+Set all = (Set) this.getServletContext().getAttribute("online");
+%>
+<%= all.size() %>
 	<div class="div1">
 		<p >留言板</p>
 		<textarea class="textarea">
@@ -58,13 +64,13 @@
 	</div>
 	<br/>
 	<span id="logout" class="">
-	<a href="<%=request.getContextPath() %>/logout.jsp">注销</a>
+	<a href="<%=request.getContextPath() %>/jsp/logout.jsp">注销</a>
 	</span>
 	<%
 		} else {
 	%>
 	<h3>
-		请先进行系统的<a href="/index.jsp">登陆</a>
+		请先进行系统的<a href="../index.jsp">登陆</a>
 	</h3>
 	<%
 		}

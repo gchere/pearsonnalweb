@@ -36,11 +36,11 @@ public class Check extends HttpServlet {
 			HttpSession session=request.getSession();
 			session.setAttribute("userid", name);
 			ServletContext context = getServletContext();
-			RequestDispatcher rd = context.getRequestDispatcher("/welcome.jsp");
+			RequestDispatcher rd = context.getRequestDispatcher("/jsp/welcome.jsp");
 			rd.forward(request, response);
 		}else {
 			ServletContext context = getServletContext();
-			RequestDispatcher rd = context.getRequestDispatcher("/errorlogin.jsp");
+			RequestDispatcher rd = context.getRequestDispatcher("/jsp/errorlogin.jsp");
 			rd.forward(request, response);
 			/*response.setStatus(HttpServletResponse.SC_MOVED_PERMANENTLY);
 			response.setHeader("location", "/guochao/index.jsp");*/
