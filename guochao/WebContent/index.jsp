@@ -29,7 +29,7 @@
 					onmousemove="mn()" onmouseout="mout()"> 
 					<br /> <br />
 				<button class="input2" id="button" onmousemove="mn1()"
-					onmouseout="mout1()"><a hover="color:orange;" href="register.jsp"style="text-decoration: none; color: black;">register</a></button>
+					onmouseout="mout1()"><a hover="color:orange;" href="<%=request.getContextPath() %>/jsp/register.jsp"style="text-decoration: none; color: black;">register</a></button>
 					
 			
 				</table>

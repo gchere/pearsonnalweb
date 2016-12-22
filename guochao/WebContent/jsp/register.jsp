@@ -10,9 +10,11 @@
 </head>
 <body>
 <h1 class="h" >欢迎注册~</h1>
-	<form action="">
+	<form action="<%=request.getContextPath() %>/servlet/Register">
 		账号：  <input type=" text" name = "userName" >
-		密码：  <input type=" text" name = "userPwd" >
+		密码：  <input type=" text" name = "userPwd" ><br/>
+		<input type="submit" value="提交" >
+		<input type="reset" value="重置" >
 	</form>
 </body>
 </html>
