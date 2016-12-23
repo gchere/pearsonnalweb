@@ -12,8 +12,6 @@ import javax.servlet.http.HttpSessionBindingEvent;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 /**
  * Application Lifecycle Listener implementation class LoginCheck
  *

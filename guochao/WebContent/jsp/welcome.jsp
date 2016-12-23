@@ -55,6 +55,7 @@
 <%
 Set all = (Set) this.getServletContext().getAttribute("online");
 %>
+当前用户的在线人数：
 <%= all.size() %>
 	<div class="div1">
 		<p >留言板</p>

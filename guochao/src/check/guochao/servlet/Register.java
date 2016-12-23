@@ -35,9 +35,10 @@ public class Register extends HttpServlet {
 			String uname = request.getParameter("userName");
 			String upwd = request.getParameter("userPwd");
 			
-			PreparedStatement statement=connection.prepareStatement("INSERT INTO usr VALUES(?,?)");
-			statement.setString(1, uname);
-			statement.setString(2, upwd);
+			PreparedStatement statement=connection.prepareStatement("INSERT INTO usr VALUES(?,?,?)");
+			statement.setString(1, null);
+			statement.setString(2, uname);
+			statement.setString(3, upwd);
 			statement.executeUpdate();
 		} catch (ClassNotFoundException e) {
 			 System.out.print("Error loading Mysql Driver!");

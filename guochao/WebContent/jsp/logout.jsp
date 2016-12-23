@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%
-response.setHeader("refresh", "2;index.jsp");
+response.setHeader("refresh", "2;../index.jsp");
 session.invalidate();
 %>
 	<h3 class="h">您已成功退出，2秒后跳转到登陆页面</h3>
